@@ -33,9 +33,9 @@ const ChatInput: React.FC<ChatInputProps> = ({ addMessage }) => {
 
   return (
     <div className="p-6 bg-gray-900 text-white flex justify-center">
-      <div className="w-6/12 flex border-none rounded-xl p-3 bg-gray-800">
+      <form className="w-6/12 flex border-none rounded-xl p-3 bg-gray-800" onSubmit={handleSubmit}>
         <div
-          onClick={handleSubmit}
+          // onClick={handleSubmit}
           className="p-2 text-white bg-transparent rounded-lg flex items-center cursor-pointer"
         >
           <img src={uploadIcon} alt="Upload" className="w-5 h-5" />
@@ -47,13 +47,13 @@ const ChatInput: React.FC<ChatInputProps> = ({ addMessage }) => {
           className="flex-grow p-2 bg-transparent outline-none placeholder:text-gray-400"
           placeholder="Type your message..."
         />
-        <div
-          onClick={handleSubmit}
+        <button
+          type="submit"
           className="p-2 text-white bg-transparent rounded-lg flex items-center cursor-pointer"
         >
           <img src={sendIcon} alt="Send" className="w-5 h-5" />
-        </div>
-      </div>
+        </button>
+      </form>
     </div>
   );
 };
