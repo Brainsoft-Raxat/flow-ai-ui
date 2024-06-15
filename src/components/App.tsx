@@ -6,7 +6,7 @@ import Layout from './Layout/Layout';
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route>
-            <Route path="/" element={<LandingPage />} />
+            <Route path="/" element={<Layout />} />
             <Route path="chat" element={<Layout />} />
         </Route>
 
