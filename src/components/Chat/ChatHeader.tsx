@@ -1,18 +1,18 @@
 import React from 'react';
 import { FaSignOutAlt } from 'react-icons/fa';
-import skillboxLogo from '../../assets/skillbox-96.svg';
+// import mainLogo from '../../assets/main-logo.svg';
 
 const ChatHeader: React.FC = () => {
   return (
     <div className="bg-gray-900 text-white p-4 flex items-center justify-between shadow-md">
       <div className="flex items-center space-x-4">
-        <img
-          src={skillboxLogo} // Path to your bot's avatar
+        {/* <img
+          src={mainLogo} // Path to your bot's avatar
           alt="Bot Avatar"
           className="w-12 h-12"
-        />
+        /> */}
         <div>
-          <h2 className="text-xl font-bold">ИИ Ассистент Skillbox</h2>
+          <h2 className="text-xl font-bold">ИИ Чат Бот</h2>
           <p className="text-sm text-gray-400">Как я могу помочь вам сегодня?</p>
         </div>
       </div>

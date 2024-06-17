@@ -1,30 +1,30 @@
 import React from 'react';
-import { FaBrain, FaCog } from 'react-icons/fa'; // Import some icons from react-icons
-import skillboxLogo from '../../assets/skillbox-96.svg';
+// import { FaBrain, FaCog } from 'react-icons/fa'; // Import some icons from react-icons
+import mainLogo from '../../assets/main-logo.svg';
 
 const chatbots = [
   {
     id: 1,
     icon: <img
-      src={skillboxLogo} // Path to your bot's avatar
+      src={mainLogo} // Path to your bot's avatar
       alt="Bot Avatar"
-      className="w-6 h-6"
+      className="w-6 h-6 text-purple-600"
     />,
-    name: 'Skillbox',
+    name: 'FlitChat',
     description: 'An AI assistant to help with learning and queries.',
   },
-  {
-    id: 2,
-    icon: <FaBrain className="w-6 h-6" />,
-    name: 'Health Bot',
-    description: 'Your health companion for daily wellness tips.',
-  },
-  {
-    id: 3,
-    icon: <FaCog className="w-6 h-6" />,
-    name: 'Tech Support Bot',
-    description: 'Technical assistance for your gadgets and software.',
-  },
+  // {
+  //   id: 2,
+  //   icon: <FaBrain className="w-6 h-6" />,
+  //   name: 'Health Bot',
+  //   description: 'Your health companion for daily wellness tips.',
+  // },
+  // {
+  //   id: 3,
+  //   icon: <FaCog className="w-6 h-6" />,
+  //   name: 'Tech Support Bot',
+  //   description: 'Technical assistance for your gadgets and software.',
+  // },
 ];
 
 const Sidebar: React.FC = () => {
