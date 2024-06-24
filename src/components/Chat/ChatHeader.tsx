@@ -12,7 +12,7 @@ const ChatHeader: React.FC = () => {
           className="w-12 h-12"
         /> */}
         <div>
-          <h2 className="text-xl font-bold">ИИ Чат Бот</h2>
+          <h2 className="text-xl font-bold">FlitChat - ИИ Чат Бот</h2>
           <p className="text-sm text-gray-400">Как я могу помочь вам сегодня?</p>
         </div>
       </div>
