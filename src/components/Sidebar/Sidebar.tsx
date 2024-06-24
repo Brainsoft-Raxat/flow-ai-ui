@@ -1,15 +1,10 @@
 import React from 'react';
 // import { FaBrain, FaCog } from 'react-icons/fa'; // Import some icons from react-icons
-import mainLogo from '../../assets/main-logo.svg';
 
 const chatbots = [
   {
     id: 1,
-    icon: <img
-      src={mainLogo} // Path to your bot's avatar
-      alt="Bot Avatar"
-      className="w-6 h-6 text-purple-600"
-    />,
+    icon: <img src="/src/assets/flitchat-logo.jpg" alt="FlitChat Logo" className="w-10 h-10 rounded-full" />,
     name: 'FlitChat',
     description: 'An AI assistant to help with learning and queries.',
   },

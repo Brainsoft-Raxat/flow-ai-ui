@@ -16,7 +16,7 @@ const ChatHeader: React.FC = () => {
           <p className="text-sm text-gray-400">Как я могу помочь вам сегодня?</p>
         </div>
       </div>
-      <button className="flex items-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+      <button className="flex items-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
         <FaSignOutAlt className="mr-2" /> Завершить чат
       </button>
     </div>
