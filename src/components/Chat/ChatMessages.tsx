@@ -36,7 +36,7 @@ const ChatMessages: React.FC<ChatMessagesProps> = ({ messages}) => {
     <div className="flex flex-col items-center flex-grow p-4 overflow-y-auto h-full w-full">
       <div className="w-6/12 flex flex-col">
         <BotMessage message='Привет! Рады видеть вас в FlitChat' />
-        <BotMessage message='Я - ИИ ассистент FlitChat. Чем могу вам сегодня помочь?' />
+        {/* <BotMessage message='Я - ИИ ассистент FlitChat. Чем могу вам сегодня помочь?' /> */}
         {/* {showSuggestions && (
           <SuggestionMessage
             suggestions={[
