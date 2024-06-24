@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import botIcon from '../../../assets/logo.svg'; // Replace with the path to your bot icon
+// import botIcon from '../../../assets/logo.svg'; // Replace with the path to your bot icon
+import FlitChatLogo from '../../../assets/flitchat-logo.jpg'
 
 interface MessageProps {
   message: string;
@@ -22,7 +23,7 @@ const BotMessage: React.FC<MessageProps> = ({ message }) => {
     <div className="flex flex-col items-start mb-4">
       <div className="flex items-center justify-start mb-2">
         <div className="mr-2">
-          <img src={botIcon} alt="Bot" className="w-6 h-6" />
+          <img src={FlitChatLogo} alt="Bot" className="w-6 h-6 rounded-full " />
         </div>
         <div className="text-sm text-gray-400">{timestamp}</div>
       </div>
