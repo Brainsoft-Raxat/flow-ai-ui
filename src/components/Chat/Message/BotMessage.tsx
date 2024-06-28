@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import botIcon from '../../../assets/logo.svg'; // Replace with the path to your bot icon
-import FlitChatLogo from '../../../assets/flitchat-logo.jpg'
+import FlitChatLogo from '../../../assets/512x512 Icon Light Rounded.svg'
 
 interface MessageProps {
   message: string;

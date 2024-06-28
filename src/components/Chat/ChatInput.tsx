@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import sendIcon from '../../assets/send.svg';
 import uploadIcon from '../../assets/upload.svg';
-import { sendChatMessage } from '../../api/chatApi';
 
 interface ChatInputProps {
-  addMessage: (message: { type: 'bot' | 'user'; text: string }) => void;
+  onSendMessage: (message: string) => void;
 }
 
-const ChatInput: React.FC<ChatInputProps> = ({ addMessage }) => {
+const ChatInput: React.FC<ChatInputProps> = ({onSendMessage }) => {
   const [input, setInput] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -18,17 +17,8 @@ const ChatInput: React.FC<ChatInputProps> = ({ addMessage }) => {
     const message = input;
     setInput('');
 
-    // Add user message to the chat
-    addMessage({ type: 'user', text: message });
-
-    try {
-      const response = await sendChatMessage(message);
-
-      // Add bot response to the chat
-      addMessage({ type: 'bot', text: response.response });
-    } catch (error) {
-      console.error('Error sending message:', error);
-    }
+    // Send the message
+    onSendMessage(message);
   };
 
   return (
