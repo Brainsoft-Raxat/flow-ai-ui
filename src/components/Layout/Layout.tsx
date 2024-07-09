@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 import Chat from '../Chat/Chat';
 
 const Layout: React.FC = () => {
-  const [selectedChat, setSelectedChat] = useState('asia'); // Initial chat selection
+  const [selectedChat, setSelectedChat] = useState('flitchat'); // Initial chat selection
 
   return (
     <div className="flex flex-col h-screen">
